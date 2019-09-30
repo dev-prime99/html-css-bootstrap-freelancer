@@ -23,6 +23,7 @@ nav{
   top: 0;
 }
 
+
 nav a{
   color: #ffffff;
   font-size: 1.75em;
@@ -53,11 +54,41 @@ nav ul li a:hover{
   color: #1abc9c;
 }
 
+.bt{
+  text-align: right;
+}
+
+nav button{
+  background-color: #1abc9c;
+  padding: 7px 15px;
+  border-radius: 1em;
+  border: none;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 990px) {
+  nav button{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  nav ul li{
+    display: none;
+  }
+}
+
 /* HEADER */
 
 header{
   background-color: #1abc9c;
   padding: 150px 0 70px 0;
+}
+
+h1{
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 header img{
@@ -83,6 +114,12 @@ header .line{
 header .fa-star{
   color: #ffffff;
   font-size: 2em;
+}
+
+header p{
+  padding-top: 2%;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 /* PORTFOLIO */
@@ -155,9 +192,11 @@ header .fa-star{
   opacity: 1;
 }
 
-#portfolio .container > .row{
-  padding-bottom: 3%;
+#portfolio .space{
+  margin-bottom: 2%;
 }
+
+
 
 /* ABOUT */
 
@@ -257,6 +296,14 @@ header .fa-star{
   font-size: 25px;
 }
 
+textarea{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1% 0 3% 0;
+  font-size: 25px;
+}
+
 .message .form-group .form-element{
   margin-bottom: 3%;
 }
@@ -272,6 +319,10 @@ header .fa-star{
   padding: 10px 30px;
 }
 
+.message .form-group button:hover{
+  background-color: #138e75;
+}
+
 /* FOOTER */
 
 footer{
@@ -283,9 +334,17 @@ footer{
 }
 
 footer i{
-  padding: 2%;
+  font-size: 25px;
+  padding: 1.7%;
+  margin: 0 1%;
   border: 1px #ffffff solid;
-  border-radius: 50%
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+footer i:hover{
+  color: #2c3e50;
+  background-color: #ffffff;
 }
 
 footer h3{
@@ -298,4 +357,16 @@ footer h3{
   padding: 1.5% 0;
   text-align: center;
   font-size: 10px;
+}
+
+footer .col-lg-4{
+  padding: 1%;
+}
+
+footer a{
+  color: #1abc9c;
+}
+
+footer a:hover{
+  color: #138e75;
 }
